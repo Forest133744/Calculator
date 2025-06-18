@@ -25,22 +25,22 @@
 
             <div class="buttonGrid">
 
-                <button class="keypap" id="buttonID">9</button>
-                <button class="keypap" id="buttonID">8</button>
-                <button class="keypap" id="buttonID">7</button>
-                <button class="keypap" id="buttonID">M</button>
-                <button class="keypap" id="buttonID">6</button>
-                <button class="keypap" id="buttonID">5</button>
-                <button class="keypap" id="buttonID">4</button>
-                <button class="keypap" id="buttonID">CE</button>
-                <button class="keypap" id="buttonID">3</button>
-                <button class="keypap" id="buttonID">2</button>
-                <button class="keypap" id="buttonID">1</button>
-                <button class="keypap" id="buttonID">CE</button>
-                <button class="keypap" id="buttonID">-</button>
-                <button class="keypap" id="buttonID">+</button>
-                <button class="keypap" id="buttonID">*</button>
-                <button class="keypap" id="buttonID">/</button>
+                <button class="keypap">9</button>
+                <button class="keypap">8</button>
+                <button class="keypap">7</button>
+                <button class="keypap">M</button>
+                <button class="keypap">6</button>
+                <button class="keypap">5</button>
+                <button class="keypap">4</button>
+                <button class="keypap">C</button>
+                <button class="keypap">3</button>
+                <button class="keypap">2</button>
+                <button class="keypap">1</button>
+                <button class="keypap">CE</button>
+                <button class="keypap">-</button>
+                <button class="keypap">+</button>
+                <button class="keypap">*</button>
+                <button class="keypap">/</button>
 
 
 
@@ -48,8 +48,8 @@
 
             <div class="lowerRow">
 
-                <button class="keypap row" id="buttonID">0</button>
-                <button class="keypap row" id="buttonID">.</button>
+                <button class="keypap row">0</button>
+                <button class="keypap row">.</button>
                 
 
 
@@ -58,7 +58,7 @@
 
             <div class="equals">
 
-                <button class="equals" id="buttonID">=</button>
+                <button class="equals">=</button>
 
             </div>
 
@@ -69,29 +69,7 @@
     </div>
 
 
-    <script>
-  // Selektujemo sve dugmiće sa klasom "keypap"
-  const buttons = document.querySelectorAll('.keypap');
-  const screen = document.querySelector('.screen');
-  let currentInput = ''; // trenutno uneseni brojevi
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const value = button.textContent;
-
-      // Ako je kliknuto CE, briši sve
-      if (value === 'CE') {
-        currentInput = '';
-        screen.textContent = '';
-        return;
-      }
-
-      // Dodaj kliknuti tekst u trenutni unos
-      currentInput += value;
-      screen.textContent = currentInput;
-    });
-  });
-</script>
+    <script src="script.js"></script>
 
 
 
